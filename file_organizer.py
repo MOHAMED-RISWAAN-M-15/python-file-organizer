@@ -31,6 +31,7 @@ def create_match_display(folder_path,list_files):
         source=os.path.join(folder_path,sfile)
         if os.path.isdir(source):
             continue
+            # skip sub folder
         name,extension=os.path.splitext(sfile)
         extension=extension.lower()
         match_case(folder_path,extension,sfile,source)
